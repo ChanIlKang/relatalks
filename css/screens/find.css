@@ -1,0 +1,174 @@
+.recommended-songs {
+  margin: 10px 0px;
+  padding: 20px 0px;
+  border-top: var(--main-border);
+  border-bottom: var(--main-border);
+}
+
+.recommended-songs__title {
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+}
+
+.recommended-songs span {
+  margin: 100px 0;
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  color: white;
+}
+
+.open-chat .open-chat__header {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  margin-bottom: 25px;
+}
+
+.open-chat__header span {
+  opacity: 0.6;
+}
+
+.open-post {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 5px;
+}
+
+.open-post__title {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.open-post__hashtags {
+  text-transform: uppercase;
+  color: white;
+}
+
+.open-post__members {
+  margin-top: 7px;
+  display: flex;
+  align-items: center;
+}
+
+.open-post__members img {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.open-post__members-count {
+  opacity: 0.5;
+  font-size: 14px;
+}
+
+.open-post__members .divider {
+  width: 2px;
+  height: 10px;
+  background-color: var(--color-gray);
+  margin: 0px 5px;
+}
+
+.open-post__members-status {
+  color: #ffb0e0;
+  font-size: 14px;
+}
+
+.open-post__photo {
+  position: relative;
+}
+
+.open-post__photo img {
+  width: 120px;
+  height: 120px;
+}
+
+.open-post__heart-count {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 5px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 12px;
+}
+
+.open-post__heart-count span {
+  margin-left: 3px;
+}
+
+@keyframes heartBeat {
+  0% {
+    color: white;
+  }
+  50% {
+    color: tomato;
+    transform: scale(1.5);
+  }
+  100% {
+    color: white;
+  }
+}
+
+.open-post__heart-count:hover i {
+  will-change: transform;
+  animation: heartBeat 1s linear infinite;
+}
+
+.advertisement {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  background-color: whitesmoke;
+  color: black;
+  border-radius: 10px;
+}
+
+.advertisement__nomad {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 150px;
+  background-color: whitesmoke;
+  color: black;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.advertisement__span {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1.5em;
+  margin-left: 50px;
+}
+
+.advertisement__span span:first-child {
+  font-size: 16px;
+  font-weight: bolder;
+}
+
+.advertisement__span span:last-child {
+  font-size: 14px;
+}
+
+.advertisement i {
+  font-size: 36px;
+  margin-right: 50px;
+  color: rgb(247, 210, 0);
+}
+
+.advertisement__nomad i {
+  font-size: 36px;
+  margin-right: 50px;
+  color: rgb(247, 210, 0);
+}
